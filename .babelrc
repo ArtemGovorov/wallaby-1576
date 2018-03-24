@@ -1,0 +1,27 @@
+{
+  "passPerPreset": true,
+  "presets": [
+    "@babel/preset-typescript",
+    "@babel/preset-es2016",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "babel-plugin-jest-hoist",
+    "babel-plugin-syntax-object-rest-spread"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "@babel/plugin-transform-modules-commonjs"
+      ]
+    },
+    "production": {
+      "presets": [
+        "babili"
+      ]
+    }
+  }
+}
