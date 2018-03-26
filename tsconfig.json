@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "noStrictGenericChecks": true,
+    "suppressExcessPropertyErrors": true,
     "allowSyntheticDefaultImports": true,
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+    "module": "es2015",
+    "target": "es2017",
+    "jsx": "react",
+    "allowJs": true,
+    "lib": [ "es2017", "dom" ],
+    "moduleResolution": "node"
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
   ]
 }
